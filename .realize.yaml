@@ -1,0 +1,27 @@
+settings:
+  legacy:
+    force: false
+    interval: 0s
+schema:
+- name: gonvue
+  path: .
+  commands:
+    build:
+      status: true
+      dir: cmd/server/
+    run:
+      status: true
+      dir: cmd/server/
+  args:
+  - -js=http://localhost:8080/app.js
+  - -port=8101
+  - -development
+  watcher:
+    paths:
+    - .
+    extensions:
+    - go
+    ignored_paths:
+    - .git
+    - .realize
+    - vendor
