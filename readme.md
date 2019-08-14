@@ -1,6 +1,6 @@
 # gonvue
-Spent too much time to create boilerplate code for some small projects that uses GO and Vue.
-So there goes template.
+Spent too much time creating boilerplate code for some small projects that uses GO and Vue!?
+So there goes working go web server with vue.
 
 ## Getting Started
 Install frontend dependencies
@@ -18,4 +18,9 @@ To start go web server and webpack dev server both with live realod
 Production version will be under './build' folder
 ```
 ./prod.sh
+```
+To launch builded project
+```
+cd build
+./server -port=8888
 ```
